@@ -118,35 +118,35 @@ body {
 
 .neomorph-btn {
     background: #FFFFFF;
-    border: 1px solid rgba(26, 75, 142, 0.1);
-    border-radius: 14px;
+    border: 1px solid #1A4B8E;
+    border-radius: 20px;
     width: 100%;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #1A4B8E;
     cursor: pointer;
     transition: all 0.2s ease;
 
-    /* Stronger Neomorphic / 3D Relief Effect */
+    /* Soft Neomorphic / 3D Relief Effect */
     box-shadow:
-        5px 5px 10px rgba(0, 0, 0, 0.2),
-        -5px -5px 10px rgba(255, 255, 255, 0.8);
+        4px 4px 10px rgba(0, 0, 0, 0.2),
+        -4px -4px 10px rgba(255, 255, 255, 0.7);
     position: relative;
     outline: none;
 }
 
 .neomorph-btn i {
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
 }
 
 .neomorph-btn:active {
     box-shadow:
-        inset 4px 4px 10px rgba(0, 0, 0, 0.1),
-        inset -4px -4px 10px rgba(255, 255, 255, 0.5);
-    transform: scale(0.96);
+        inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(0.95);
 }
 
 .footer {
