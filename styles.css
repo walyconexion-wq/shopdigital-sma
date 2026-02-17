@@ -1,11 +1,8 @@
 :root {
     --primary-blue: #1A4B8E;
-    --dark-blue: #0A2A5E;
-    --background-white: #F0F4F8;
+    --dark-blue: #0A224E;
+    --grey-text: #8E9AAF;
     --btn-bg: #FFFFFF;
-    --shadow-light: #FFFFFF;
-    --shadow-dark: #C2D1E5;
-    --text-color: #1A4B8E;
     --font-main: 'Inter', sans-serif;
 }
 
@@ -35,11 +32,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 75, 142, 0.35);
-    /* Subtle but firm blue overlay */
-    backdrop-filter: blur(10px);
-    /* Artistic blur balancing peak visibility */
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.45);
+    /* Brighter, like mockup */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: -1;
 }
 
@@ -50,15 +46,14 @@ body {
 }
 
 .logo-3d {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: #1A4B8E;
     text-shadow:
         1px 1px 0px #ffffff,
-        2px 2px 0px #d8e2ee,
-        3px 3px 0px #cbd7e7,
+        2px 2px 3px rgba(0, 0, 0, 0.2),
         4px 4px 6px rgba(0, 0, 0, 0.1);
-    letter-spacing: -2px;
+    letter-spacing: -3px;
 }
 
 .logo-3d span {
@@ -68,22 +63,22 @@ body {
 }
 
 .subtitle {
-    color: #FFFFFF;
-    font-size: 0.9rem;
+    color: var(--grey-text);
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 2px;
     margin-top: -5px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
 }
 
 .selection-title {
-    color: #FFFFFF;
-    font-size: 0.8rem;
+    color: var(--grey-text);
+    font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 15px;
     text-transform: uppercase;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .container {
@@ -96,10 +91,10 @@ body {
     padding: 10px;
 }
 
-.grid-4x4 {
+.grid-3x4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 20px;
     width: 100%;
 }
 
@@ -107,43 +102,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .category-item span {
-    font-size: 0.65rem;
-    color: #FFFFFF;
-    /* High contrast white labels */
+    font-size: 0.72rem;
+    color: var(--grey-text);
     font-weight: 600;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .neomorph-btn {
     background: #FFFFFF;
-    border: 1px solid #1A4B8E;
+    border: 1px solid rgba(26, 75, 142, 0.1);
     border-radius: 20px;
     width: 100%;
     aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    color: var(--dark-blue);
-    /* Professional dark blue */
+    font-size: 2.2rem;
+    /* Larger icons like mockup */
+    color: var(--primary-blue);
     cursor: pointer;
     transition: all 0.2s ease;
 
     /* Soft Neomorphic / 3D Relief Effect */
     box-shadow:
-        4px 4px 10px rgba(0, 0, 0, 0.2),
-        -4px -4px 10px rgba(255, 255, 255, 0.7);
+        10px 10px 20px rgba(163, 177, 198, 0.5),
+        -10px -10px 20px rgba(255, 255, 255, 1);
     position: relative;
     outline: none;
 }
 
 .neomorph-btn i {
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
 }
 
 .neomorph-btn:active {
@@ -162,30 +155,30 @@ body {
 
 .share-btn {
     background: #FFFFFF;
-    color: #1A4B8E;
+    color: var(--primary-blue);
     border: 1px solid rgba(26, 75, 142, 0.1);
-    padding: 12px 35px;
-    border-radius: 20px;
-    font-size: 1.1rem;
+    padding: 14px 45px;
+    border-radius: 25px;
+    font-size: 1.2rem;
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     box-shadow:
-        8px 8px 16px #C2D1E5,
-        -8px -8px 16px #FFFFFF;
+        10px 10px 20px rgba(163, 177, 198, 0.5),
+        -10px -10px 20px rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .share-btn i {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .share-btn:active {
     box-shadow:
-        inset 4px 4px 8px #C2D1E5,
-        inset -4px -4px 8px #FFFFFF;
+        inset 5px 5px 10px rgba(163, 177, 198, 0.6),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.8);
     transform: scale(0.98);
 }
 
