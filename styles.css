@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--font-main);
-    background: url('https://www.civitatis.com/f/argentina/san-martin-de-los-andes/excursion-privada-san-martin-andes-589x392.jpg') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1596239306785-b210d7ef8445?q=80&w=2560') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     display: flex;
